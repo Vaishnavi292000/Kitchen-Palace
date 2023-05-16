@@ -19,7 +19,9 @@ This folder contains the following:
 ## Changes needs to be done
 1. Open dynamoDb of your skill and copy the table name.
 2. Paste the table in your Lambda/skill code-> config -> db.js -> line No. 3
-3. Paste the db_items.json file in your table items.
+3. Insert DynamoDb table items from db_items.csv file.
+
+### Note : Before running this skill you need to enable APL feature from Interfaces tab.
 
 ## References
 - [Dynamic Entities Tech Docs](https://developer.amazon.com/docs/custom-skills/use-dynamic-entities-for-customized-interactions.html)

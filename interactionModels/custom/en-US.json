@@ -1,0 +1,225 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "kitchen palace",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "exit",
+            "close",
+            "end",
+            "stop",
+            "stop my workflow"
+          ]
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GetRecipeList",
+          "slots": [],
+          "samples": [
+            "show my recipes",
+            "my recipes",
+            "list of recipe"
+          ]
+        },
+        {
+          "name": "GetRecipeItem",
+          "slots": [
+            {
+              "name": "workflowName",
+              "type": "WorkflowName"
+            }
+          ],
+          "samples": [
+            "open {workflowName}",
+            "select {workflowName}",
+            "{workflowName}"
+          ]
+        },
+        {
+          "name": "GetRecipeStep",
+          "slots": [
+            {
+              "name": "stepAction",
+              "type": "WorkflowStepAction"
+            }
+          ],
+          "samples": [
+            "{stepAction}"
+          ]
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "start",
+              "name": {
+                "value": "start",
+                "synonyms": [
+                  "start the steps",
+                  "start the process"
+                ]
+              }
+            },
+            {
+              "id": "back",
+              "name": {
+                "value": "back",
+                "synonyms": [
+                  "backward",
+                  "back",
+                  "previous"
+                ]
+              }
+            },
+            {
+              "id": "next",
+              "name": {
+                "value": "next",
+                "synonyms": [
+                  "forward",
+                  "next",
+                  "front"
+                ]
+              }
+            }
+          ],
+          "name": "WorkflowStepAction"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "vaishnavi"
+              }
+            }
+          ],
+          "name": "WorkflowName"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "GetRecipeItem",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "workflowName",
+              "type": "WorkflowName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.771243175330.822849362722"
+              }
+            }
+          ]
+        },
+        {
+          "name": "GetRecipeStep",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "stepAction",
+              "type": "WorkflowStepAction",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.771243175330.822849362722",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please select the item"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.535728830820",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "say start, next or previous"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.535728830820.1127589975319",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "say start, next or previous"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "17"
+}

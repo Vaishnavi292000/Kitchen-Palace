@@ -1,0 +1,77 @@
+{
+  "type": "APL",
+  "version": "2023.1",
+  "description": "This APL document places text on the screen. Has Previous and next on voice commands",
+  "import": [
+    {
+      "name": "alexa-layouts",
+      "version": "1.7.0"
+    }
+  ],
+  "mainTemplate": {
+    "parameters": [
+      "payload"
+    ],
+    "items": [
+      {
+        "type": "Container",
+        "height": "100vh",
+        "width": "100vw",
+        "items": [
+          {
+            "type": "AlexaBackground",
+            "backgroundImageSource": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJXrnQg-b6gsGAvlspWRdyHnVlAjj0k1RhQ&usqp=CAU"
+          },
+          {
+            "type": "Text",
+            "id": "t1",
+            "height": "75%",
+            "text": "Prepare Reagents",
+            "textAlign": "Left",
+            "textAlignVertical": "Left",
+            "paddingLeft": "@spacingSmall",
+            "paddingRight": "@spacingSmall",
+            "paddingTop": "@spacingXLarge",
+            "style": "textStyleBody"
+          },
+          {
+            "type": "Text",
+            "id": "tat",
+            "height": "75%",
+            "text": "Prepare Reagents",
+            "textAlign": "Left",
+            "textAlignVertical": "Left",
+            "paddingLeft": "@spacingSmall",
+            "paddingRight": "@spacingSmall",
+            "paddingTop": "@spacingXLarge",
+            "style": "textStyleBody"
+          },
+          {
+            "type": "Text",
+            "id": "hot",
+            "height": "75%",
+            "text": "Prepare Reagents",
+            "textAlign": "Left",
+            "textAlignVertical": "Left",
+            "paddingLeft": "@spacingSmall",
+            "paddingRight": "@spacingSmall",
+            "paddingTop": "@spacingXLarge",
+            "style": "textStyleBody"
+          },
+          {
+            "type": "Text",
+            "id": "materials",
+            "height": "75%",
+            "text": "Prepare Reagents",
+            "textAlign": "Left",
+            "textAlignVertical": "Left",
+            "paddingLeft": "@spacingSmall",
+            "paddingRight": "@spacingSmall",
+            "paddingTop": "@spacingXLarge",
+            "style": "textStyleBody"
+          }
+        ]
+      }
+    ]
+  }
+}

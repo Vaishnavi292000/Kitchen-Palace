@@ -1,0 +1,41 @@
+{
+  "type": "APL",
+  "version": "2023.1",
+  "description": "This APL document places text on the screen. Has Previous and next on voice commands",
+  "import": [
+    {
+      "name": "alexa-layouts",
+      "version": "1.7.0"
+    }
+  ],
+  "mainTemplate": {
+    "parameters": [
+      "payload"
+    ],
+    "items": [
+      {
+        "type": "Container",
+        "height": "100vh",
+        "width": "100vw",
+        "items": [
+          {
+            "type": "AlexaBackground",
+            "backgroundColor": "@colorRed800"
+          },
+          {
+            "type": "Text",
+            "id": "helloTextComponent",
+            "height": "75%",
+            "text": "Prepare aneuploidy mastermix",
+            "textAlign": "center",
+            "textAlignVertical": "center",
+            "paddingLeft": "@spacingSmall",
+            "paddingRight": "@spacingSmall",
+            "paddingTop": "@spacingXLarge",
+            "style": "textStyleBody"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "APL",
+  "version": "2023.1",
+  "description": "This APL document places text on the screen. Has Previous and next on voice commands",
+  "theme": "dark",
+  "import": [
+    {
+      "name": "alexa-layouts",
+      "version": "1.7.0"
+    }
+  ],
+  "mainTemplate": {
+    "parameters": [
+      "payload"
+    ],
+    "items": [
+      {
+        "type": "Container",
+        "height": "100vh",
+        "width": "100vw",
+        "items": [
+            {
+                "type": "AlexaBackground",
+                "backgroundImageSource": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE-RcQwdt58hGV1sJxdrQz_Xpnd4UfC_hXLw&usqp=CAU",
+                "colorOverlay": true
+            }
+        ]
+      }
+    ]
+  }
+}
